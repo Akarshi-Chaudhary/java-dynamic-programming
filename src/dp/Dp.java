@@ -8,14 +8,29 @@ public class Dp {
         
         Scanner sc = new Scanner(System.in);
         
-        System.out.print("Enter number of stairs : ");
+//        System.out.print("Enter number of stairs : ");
+//        
+//        int n  = sc.nextInt();
+//        
+//        int result = climbingStairs.climbStairs(n); // mthd is static class depndnt 
+//        
+//        System.out.println("Number of ways = " + result);
+//        
+//        sc.close();
+
+
+        System.out.print("Enter number of stairs: ");
+        int n = sc.nextInt();
         
-        int n  = sc.nextInt();
+        int[] cost = new int[n];
+        System.out.println("Enter cost of each stair:");
+         for (int i = 0; i < n; i++) {
+            cost[i] = sc.nextInt();
+        }
+
+        int ans = Min_Cost.minCostClimbStairs(cost);
         
-        int result = climbingStairs.climbStairs(n); // mthd is static class depndnt 
-        
-        System.out.println("Number of ways = " + result);
-        
+        System.out.print("min cost req to react at position : " + ans );
         sc.close();
     }
     
