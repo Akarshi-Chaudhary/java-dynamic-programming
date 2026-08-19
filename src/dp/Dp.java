@@ -12,7 +12,7 @@ public class Dp {
         
         int n  = sc.nextInt();
         
-        int result = climbingStairs.climbStairs(n);
+        int result = climbingStairs.climbStairs(n); // mthd is static class depndnt 
         
         System.out.println("Number of ways = " + result);
         
@@ -20,3 +20,7 @@ public class Dp {
     }
     
 }
+
+
+// static mthd belong to the class--> climbingStairs -->climbStairs, no obj required
+//non-static mthd belong to object, so req -->  ClimbingStairs obj = new ClimbingStairs(); and  int result = obj.climbStairs(n);
