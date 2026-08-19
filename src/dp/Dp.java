@@ -8,6 +8,7 @@ public class Dp {
         
         Scanner sc = new Scanner(System.in);
         
+        // climb stairs
 //        System.out.print("Enter number of stairs : ");
 //        
 //        int n  = sc.nextInt();
@@ -18,22 +19,35 @@ public class Dp {
 //        
 //        sc.close();
 
+//min cost 
 
-        System.out.print("Enter number of stairs: ");
-        int n = sc.nextInt();
-        
-        int[] cost = new int[n];
-        System.out.println("Enter cost of each stair:");
-         for (int i = 0; i < n; i++) {
-            cost[i] = sc.nextInt();
-        }
+//        System.out.print("Enter number of stairs: ");
+//        int n = sc.nextInt();
+//        
+//        int[] cost = new int[n];
+//        System.out.println("Enter cost of each stair :");
+//         for (int i = 0; i < n; i++) {
+//            cost[i] = sc.nextInt();
+//        }
+//
+//        int ans = Min_Cost.minCostClimbStairs(cost);
+//        
+//        System.out.print("min cost req to react at position = " + ans );
+//        sc.close();
+//    }
 
-        int ans = Min_Cost.minCostClimbStairs(cost);
+//house rob 
         
-        System.out.print("min cost req to react at position : " + ans );
-        sc.close();
+    System.out.print("enter the number of house: ");
+    int n = sc.nextInt();
+    int[] nums = new int[n];
+    System.out.print("enter the money: ");
+    for(int i = 0; i < n; i++){
+        nums[i] = sc.nextInt();
     }
-    
+        int res = houseRob.rob(nums);
+        System.out.print("max money " + res);
+    } 
 }
 
 
